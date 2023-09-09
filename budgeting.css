@@ -1,0 +1,153 @@
+body {
+    background-color: #40394A;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.containerOne {
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(147,198,142,0.9);
+    align-self: center;
+    margin: 10px;
+    padding: 10px;
+    opacity: 0.8;
+    border-radius: 20% 10%;
+}
+
+#calculateBtn {
+    margin: 10px;
+    padding: 10px;
+    width: 140px;
+    align-self: center;
+    background-color: #40394A;
+    color: #EFEAD8;
+    opacity: 0.7;
+    border: none;
+    font-size: 15px;
+}
+
+#calculateBtn:hover {
+    margin: 10px;
+    padding: 10px;
+    width: 140px;
+    align-self: center;
+    background-color: #FA1E0E;
+    color: #2E0249;
+    opacity: 0.7;
+    border: none;
+    font-size: 15px;
+    font-weight: 800;
+}
+.backBtn {
+    margin: 10px;
+    padding: 10px;
+    width: 140px; 
+   align-self: center;
+   background-color: #40394A;
+    color: #EFEAD8;
+    opacity: 0.7;
+    border: none;
+    font-size: 15px;
+}
+.backBtn:hover {
+    margin: 10px;
+    padding: 10px;
+    width: 140px; 
+   align-self: center;
+   background-color: #583D72;
+    color: #FFBE0F;
+    opacity: 0.7;
+    border: none;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+
+/* container two */
+
+.containerTwo {
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(147,198,142,0.9);
+    align-self: center;
+    margin: 10px;
+    padding: 10px;
+    opacity: 0.8;
+    border-radius: 10% 20%;
+}
+/* .contTwohide {
+    display: none; 
+} */
+
+#showNecessities,#showWants,#showSavingsDebts {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    
+    
+
+    background-color: #FFC75F;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #40394A;
+}
+
+#showSecondPage {
+width: 500px;
+align-self: center;
+}
+.headerParent {
+    display: flex;
+}
+
+.headerChild {
+    background: linear-gradient(to right, #FA1E0E,#FFBE0F);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 25px;
+    justify-content: center;
+}
+
+#formMonth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+}
+
+input {
+    font-weight: 400;
+    font-size: 15px;
+    padding: 5px;
+    margin-bottom: 4%;
+    background-color: #EFEAD8;
+    border: #fff; 
+}
+
+select {
+    background-color: #EFEAD8;
+    border: none;
+}
+label {
+    color: #40394A;
+    font-weight: 800;
+}
+
+#formMonth {
+    margin-top: 1%;
+}
+#selectMonth {
+    font-weight: 400;
+    font-size: 18px;
+    width: 50%;
+    padding: 5px;
+    margin: 10px;
+}

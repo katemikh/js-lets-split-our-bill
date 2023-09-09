@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 50-30-20 budget Project</title>
+    <link rel="stylesheet" href="budgeting.css">
+
+</head>
+<body>
+<div class="mainContainer">
+    <div class="containerOne">
+
+    <div class="headerParent"> 
+        <h1 class="headerChild"> The 50/30/20 household budget Calculator</h1>
+    </div>
+
+    <form id="formMonth">
+        <select id="selectMonth">
+            <option selected disabled value="chooseMonth">Choose a Month</option>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+         </select>
+
+         <div class="spouses">
+            <div class="spouseContainer">
+               <label class="husband">Family Member #1</label>
+               <input id="husbandsName" type="text" placeholder="Name...">
+               <input id="husbandsIncome" class="monthlyIncome" type="text" placeholder="Monthly income in $...">
+            </div>
+            <div class="spouseContainer">
+               <label class="wife">Family Member #2</label>
+               <input id="wifesName" type="text" placeholder="Name...">
+               <input id="wifesIncome" class="monthlyIncome" type="text" placeholder="Monthly income in $...">
+            </div>
+         </div>
+      </form>
+    
+      <div class="totalFamilyIncomeParent">
+        <label class="wife">Total Family Income: </label>
+        <input id="totalIncome" class="totalFamilyIncomeChild" type="text" placeholder="Total family income in $...">
+     </div>
+      
+
+     <button id="calculateBtn">Calculate</button>
+     <!-- <img id="picOne" src=" " alt="" width="160"> -->
+     <button class="backBtn">EXIT</button>
+
+  </div>
+
+  <div class="containerTwo contTwohide">
+    <div class="headerParent">
+        <h2 class="headerChild"> Hi "<span id="husbandsNameOne"> </span> " and  "<span id="wifesNameOne"> </span> "!</h2><br>
+        <h3 class="headerChild">According to your family income, your 50/30/20 numbers in "<span id="month"></span>"are folowing:</h3>
+     </div>
+     
+     <!-- 1block -->
+<div id="showSecondPage">
+    <div id="showNecessities">
+        <p>ON NECESSITIES 50%</p>
+        <span> $</span>
+        <span id="necessitiesAmount"> </span>
+        <span> per Family </span>
+    </div>
+   <!-- 2block -->
+    <div id="showWants">
+       <p>ON WANTS 30%</p>
+       <span> $</span>
+       <span id="wantsAmount"> </span>
+       <span> per Family </span>
+   </div>
+   
+   <!-- 3 block -->
+   <div id="showSavingsDebts">
+       <p> ON SAVINGS/DEBTS PAYMENTS 20%</p>
+       <span> $</span>
+       <span id="savingsDebtsAmount"> </span>
+       <span> per Family </span>
+   </div>
+
+  </div>
+  <button class="backBtn">EXIT</button>
+</div>
+
+</div>
+<script src="budgeting.js"> </script>
+</body>
+</html>

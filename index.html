@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul#8- App-Lets split our bill</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+       <h1> Let`s split our bill !!!</h1>
+       <form>
+          <p> Bill</p>
+          <span> $
+          <input id="bill" type="text" placeholder="Bill...">
+        </span>
+          <p> Number of people</p>
+          <span> 
+          <input id="people" type="text" placeholder="How many people? ">
+        </span>
+          <p> Did you like our service? </p>
+          <button id="addTip"> Add Tip!</button>
+          <select id="tip">
+             <option disabled> Select an option</option>
+             <option value="0.30"> Wow! 30% </option>
+             <option value="0.20"> Good Service 20% </option>
+             <option value="0.10"> It was ok 10% </option>
+             <option selected value="0.00"> No tip! </option>
+          </select>
+          <button id="btn"> Calculate</button>
+       </form>
+
+<!-- 1block -->
+<div id="showTotalAmountToPay">
+ <div id="billSplit">
+     <p> Bill</p>
+     <span> $</span>
+     <span id="dividedBill"> </span>
+     <span> per person </span>
+ </div>
+<!-- 2block -->
+ <div id="totalTip">
+    <p> Tip</p>
+    <span> $</span>
+    <span id="dividedTip"> </span>
+    <span> per person </span>
+</div>
+
+<!-- 3 block -->
+<div id="totalAmount">
+    <p> Total</p>
+    <span> $</span>
+    <span id="billAndTip"> </span>
+    <span> per person </span>
+</div>
+
+</div>
+
+
+
+    </div>
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"> </script>
+ </body>
+</html>
+
+<!-- part from budgeting file /if needed-->
+
+<!-- <div class="headerParent">
+        <h3 class="headerChild">Household expenses in <span id="month"></span>:</h3>
+     </div> -->
+<!-- <div class="formTwoParent">
+      <form id="formTwo">
+        <label class="expensesName">Rent/Mortgage:</label>
+        <input id="rentMortgage" class="input" type="text" placeholder="0000.00">
+        <label class="expensesName">Utilities (water, gas, electricity, Internet, etc.):</label>
+        <input id="utilities" class="input" type="text" placeholder="0000.00">
+        <label class="expensesName">Car:</label>
+        <input id="car" class="input" type="text" placeholder="0000.00">
+        <label class="expensesName">Food:</label>
+        <input id="food" class="input" type="text" placeholder="0000.00">
+        <label class="expensesName">Household goods:</label>
+        <input id="goods" class="input" type="text" placeholder="0000.00">
+        <label class="expensesName">Kid Care:</label>
+        <input id="kids" class="input" type="text" placeholder="0000.00">
+        <label class="expensesName">Other expenses:</label>
+        <input id="other" class="input" type="text" placeholder="0000.00">
+     </form>
+    </div> -->
